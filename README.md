@@ -1,33 +1,31 @@
 Shelf Retail Detection & Segmentation
-Project Overview
+        Project Overview
 
 This project automates quality control for shelving units before packaging. It detects shelves inside boxes and segments key components for verification.
 
 Two models are used:
 
-Shelf Detection – Detects each shelf in a box.
+        Shelf Detection – Detects each shelf in a box.
+        
+        Shelf Component Segmentation – For each cropped shelf, segments antiplifir, bullnose, and divider.
+        
+        Purpose: Ensures correct assembly and placement of shelving components prior to shipment.
 
-Shelf Component Segmentation – For each cropped shelf, segments antiplifir, bullnose, and divider.
+Computer Vision Tasks:
 
-Purpose: Ensures correct assembly and placement of shelving components prior to shipment.
+        Detection: Object detection for shelves
+        
+        Segmentation: YOLO-based segmentation for shelf components
 
-Computer Vision Tasks
+Dataset:
 
-Detection: Object detection for shelves
+        Type: Fully custom
+        
+        Annotation Tools: CVAT
 
-Segmentation: YOLO-based segmentation for shelf components
+Models & TrainingL:
 
-Dataset
-
-Type: Fully custom
-
-Annotation Tools: Roboflow, CVAT, Label Studio
-
-Challenges handled: Lighting variations, reflections, and similar packaging patterns
-
-Models & Training
-
-YOLO Version: YOLOv11-n
+        YOLO Version: YOLOv11-n
 
 Framework: PyTorch
 
@@ -38,8 +36,6 @@ Image Size: Used consistently across both models
 Training Time: Optimized per model
 
 Techniques Used:
-
-Data augmentation
 
 Transfer learning
 
