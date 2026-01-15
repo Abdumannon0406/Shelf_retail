@@ -98,7 +98,7 @@ Dependencies: PyTorch, YOLOv11, OpenCV, NumPy
 
 Install:
 
-pip install -r requirements.txt
+        pip install -r requirements.txt
 
 Deployment
 
