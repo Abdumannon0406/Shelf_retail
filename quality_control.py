@@ -6,11 +6,11 @@ from ultralytics import YOLO
 # CONFIG
 # ---------------------------------------------------------
 
-shelf_model_path = "runs/detect/train13/weights/best.pt"        # YOLO OD model
-part_model_path  = "runs/detect/train15/weights/best.pt"       # YOLO Seg model
+shelf_model_path = "models/shelf_detector.pt"        # YOLO OD model
+part_model_path  = "models/segment.pt"       # YOLO Seg model
 
-input_video  = "/mnt/data11/projects/Shelf_retail/DATASET/testing_videos/WIN_20251128_14_01_07_Pro.mp4"
-output_video = "output_checked_8.mp4"
+input_video  = "video/WIN_20251204_14_03_47_Pro.mp4"
+output_video = "video/output_checked_8.mp4"
 
 valid_divider_counts = [3, 5, 9, 11, 15, 8]
 
